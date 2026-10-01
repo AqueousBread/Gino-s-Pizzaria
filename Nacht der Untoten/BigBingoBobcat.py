@@ -29,10 +29,10 @@ import json
 #select a mode
 WinCon = input("What is your win condition: Cover, Diag, Vert, Horiz, or any? ").lower()
 
-User = input("What is your username: ").upper()
-GamesWon = 0
-data = {"User": User, "GamesWon": GamesWon, active=True}
-with open("user_data.json", "w", encoding="utf-8") as f:
+#User = input("What is your username: ").upper()
+#GamesWon = 0
+#data = {"User": User, "GamesWon": GamesWon, active=True}
+#with open("user_data.json", "w", encoding="utf-8") as f:
 
 
 
