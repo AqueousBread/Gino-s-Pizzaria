@@ -100,7 +100,7 @@ while NB == NI:
 NN = ("**")
 NG = random.randint(31, 45)
 while NB == NG or NI == NG or NN == NG:
-    IG = random.randint(31, 45)
+    NG = random.randint(31, 45)
 NO = random.randint(31, 45)
 while NB == NO or NI == NO or NN == NO or NG == NO:
     NO = random.randint(31, 45)
