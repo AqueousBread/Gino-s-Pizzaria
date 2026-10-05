@@ -1,0 +1,56 @@
+('C:\\Users\\Phoebe\\Documents\\GitHub\\Gino-s-Pizzaria\\Nacht der '
+ 'Untoten\\build\\BigBingoBobcat\\BigBingoBobcat.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True,
+  'SYMLINK': False},
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'C:\\Users\\Phoebe\\Documents\\GitHub\\Gino-s-Pizzaria\\Nacht der '
+   'Untoten\\build\\BigBingoBobcat\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Users\\Phoebe\\Documents\\GitHub\\Gino-s-Pizzaria\\Nacht der '
+   'Untoten\\build\\BigBingoBobcat\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\Users\\Phoebe\\Documents\\GitHub\\Gino-s-Pizzaria\\Nacht der '
+   'Untoten\\build\\BigBingoBobcat\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\Users\\Phoebe\\Documents\\GitHub\\Gino-s-Pizzaria\\Nacht der '
+   'Untoten\\build\\BigBingoBobcat\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\Users\\Phoebe\\Documents\\GitHub\\Gino-s-Pizzaria\\Nacht der '
+   'Untoten\\build\\BigBingoBobcat\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\Users\\Phoebe\\Documents\\GitHub\\Gino-s-Pizzaria\\Nacht der '
+   'Untoten\\build\\BigBingoBobcat\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\Users\\Phoebe\\PycharmProjects\\Nacht der '
+   'Untoten\\.venv\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Users\\Phoebe\\PycharmProjects\\Nacht der '
+   'Untoten\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('BigBingoBobcat',
+   'C:\\Users\\Phoebe\\Documents\\GitHub\\Gino-s-Pizzaria\\Nacht der '
+   'Untoten\\BigBingoBobcat.py',
+   'PYSOURCE')],
+ 'python314.dll',
+ True,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)

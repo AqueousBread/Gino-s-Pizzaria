@@ -15,6 +15,10 @@
 #Bingo Board: Big Bingo Bobcat (B5)
     #changelog: Now adding the win mechanics
 
+    ##CURRENT BUGS:
+        ##Current issue where program freezes after generating the numbers for the "I" column.
+
+
 
 #all imports
 import random
@@ -63,11 +67,6 @@ print(BO)
 
 #fixing formatting to make 1 digit numbers into 2 digit numbers.
 
-if BB < 10: BB = f"{BB:02d}"
-if BI < 10: BI = f"{BI:02d}"
-if BN < 10: BN = f"{BN:02d}"
-if BG < 10: BG = f"{BG:02d}"
-if BO < 10: BO = f"{BO:02d}"
 
 
 
@@ -165,11 +164,11 @@ print("\n" * 5)
 
 #two spaces between each letter
 print(Back.LIGHTWHITE_EX + Fore.BLACK + "B    I    N    G    O ")
-print(Back.WHITE + Fore.BLACK + f'{BB} | {IB} | {NB} | {GB} | {OB}')
-print(Back.WHITE + Fore.BLACK + f'{BI} | {II} | {NI} | {GI} | {OI}')
-print(Back.WHITE + Fore.BLACK + f'{BN} | {IN} | {NN} | {GN} | {ON}')
-print(Back.WHITE + Fore.BLACK + f'{BG} | {IG} | {NG} | {GG} | {OG}')
-print(Back.WHITE + Fore.BLACK + f'{BO} | {IO} | {NO} | {GO} | {OO}')
+print(Back.WHITE + Fore.BLACK + f'{BB:>2} | {IB} | {NB} | {GB} | {OB}')
+print(Back.WHITE + Fore.BLACK + f'{BI:>2} | {II} | {NI} | {GI} | {OI}')
+print(Back.WHITE + Fore.BLACK + f'{BN:>2} | {IN} | {NN} | {GN} | {ON}')
+print(Back.WHITE + Fore.BLACK + f'{BG:>2} | {IG} | {NG} | {GG} | {OG}')
+print(Back.WHITE + Fore.BLACK + f'{BO:>2} | {IO} | {NO} | {GO} | {OO}')
 
 #print(" B    I    N    G    O\n", BB, "|", IB, "|", NB, "|", GB, "|", OB, "\n", BI, "|", II, "|", NI, "|", GI, "|", OI, "\n", BN, "|", IN, "|", NN, "|", GN, "|", ON, "\n", BG, "|", IG, "|", NG, "|", GG, "|", OG, "\n", BO, "|", IO, "|", NO, "|", GO, "|", OO)
 #the above was deemed unnessicary due to the board being still visible in the program from earlier.
@@ -180,14 +179,15 @@ print(Back.WHITE + Fore.BLACK + f'{BO} | {IO} | {NO} | {GO} | {OO}')
 Bingo = False
 
 while Bingo == False:
-    numCalled = input("What number was called? (Not the letter) If the number is less than 10, please put a 0 in front.: ")
+    numCalled = input("What number was called? (Not the letter): ")
 
-    fixVariable = "10"
-    if numCalled >= fixVariable: numCalled = int(numCalled)
+    #fixVariable = "10"
+    #if numCalled >= fixVariable:
+    numCalled = int(numCalled)
 
     #if BB < 10: BB = f"{BB:02d}"
 
-    #currently only works for the B column
+
     if numCalled == BB:
         BB = "**"
     elif numCalled == IB:
@@ -236,14 +236,14 @@ while Bingo == False:
         GO = "**"
     elif numCalled == OO:
         OO = "**"
-    else: print("Sorry, It's not on your card, or you didn't put a 0 in front.")
+    else: print("Sorry, It's not on your card.")
 
     print(Back.LIGHTWHITE_EX + Fore.BLACK + "B    I    N    G    O ")
-    print(Back.WHITE + Fore.BLACK + f'{BB} | {IB} | {NB} | {GB} | {OB}')
-    print(Back.WHITE + Fore.BLACK + f'{BI} | {II} | {NI} | {GI} | {OI}')
-    print(Back.WHITE + Fore.BLACK + f'{BN} | {IN} | {NN} | {GN} | {ON}')
-    print(Back.WHITE + Fore.BLACK + f'{BG} | {IG} | {NG} | {GG} | {OG}')
-    print(Back.WHITE + Fore.BLACK + f'{BO} | {IO} | {NO} | {GO} | {OO}')
+    print(Back.WHITE + Fore.BLACK + f'{BB:>2} | {IB} | {NB} | {GB} | {OB}')
+    print(Back.WHITE + Fore.BLACK + f'{BI:>2} | {II} | {NI} | {GI} | {OI}')
+    print(Back.WHITE + Fore.BLACK + f'{BN:>2} | {IN} | {NN} | {GN} | {ON}')
+    print(Back.WHITE + Fore.BLACK + f'{BG:>2} | {IG} | {NG} | {GG} | {OG}')
+    print(Back.WHITE + Fore.BLACK + f'{BO:>2} | {IO} | {NO} | {GO} | {OO}')
 
     if WinCon == "cover" and BB == "**" and IB == "**" and NB == "**" and GB == "**" and OB == "**" and BI == "**" and II == "**" and NI == "**" and GI == "**" and OI == "**" and BN == "**" and IN == "**" and NN == "**" and GN == "**" and ON == "**" and BG == "**" and IG == "**" and NG == "**" and GG == "**" and OG == "**" and BO == "**" and IO == "**" and NO == "**" and GO == "**" and OO == "**":
         print("BINGO! CALL IT OUT!")
@@ -330,3 +330,12 @@ while Bingo == False:
         if BO == "**" and IO == "**" and NO == "**" and GO == "**" and OO == "**":
             print("BINGO! CALL IT OUT!")
             Bingo = True
+
+
+
+Horse = "No Bingo"
+while Horse != "BINGO":
+    Horse = input("Please have the Bingo Caller verify your bingo. ")
+
+
+
